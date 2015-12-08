@@ -37,6 +37,7 @@ function largestTriplet(num){
 }
 
 function join(arr, delim){
+  // create the "join" method without calling the Array.prototype.join method
   return arr.join(delim ? delim : "");
 }
 
