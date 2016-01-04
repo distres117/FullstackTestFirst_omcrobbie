@@ -16,6 +16,8 @@ Mammal.prototype.haveBaby = function(){
 function Cat(name, color){
   Mammal.call(this, name);
   this.color = color;
+  // plae haveBaby on the Cat.prototype Object.  Keep in mind, line 27 has to come first since you are re-assigning the Cat.prototype object
+  // After line 27, you can place haveBaby on the Cat.prototype object.
   this.haveBaby = function(babyColor){
     var baby = new Cat("Baby " + this.name, babyColor);
     this.offspring.push(baby);
